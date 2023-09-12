@@ -40,11 +40,11 @@ Surface Plane
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Sportcity
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="images/ss1.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="images/ss2.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
