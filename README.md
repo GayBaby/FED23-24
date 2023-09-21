@@ -101,6 +101,8 @@ Hoeveel delen/sections moet je minimaal hebben van de website.
 
 maak van articles, sections
 Je mag geen classes gebruiken, alleen nth of type
+
+Achtergronden in CSS, afbeeldingen in HTML.
 </details>
 
 
