@@ -96,19 +96,11 @@ Stand van zaken Laura
 Mijn HTML code is redelijk uitgebereid en ik heb zelfs al CSS toegepast. Ik loop echter met simpele zaken nog een beetje vast (lees: ik heb dit gewoon nog niet correct toegepast), maar ik heb nog niet de tijd genomen om hier goed voor te zitten en hierover te Googlen. Wanneer ik écht vast loop zal ik vragen stellen.
 
 Agenda voor meeting
-samen met je groepje opstellen
-
 Vragen over het gebruik van afbeeldingen: Moet dit in de CSS of mag dit in de HTML.
 Hoeveel delen/sections moet je minimaal hebben van de website.
-Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-punt 1
-punt 2
-nog een punt
-...
-
-
+maak van articles, sections
+Je mag geen classes gebruiken, alleen nth of type
 </details>
 
 
