@@ -115,17 +115,12 @@ Achtergronden in CSS, afbeeldingen in HTML.
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  ik krijg de artikelen niet per se goed naast elkaar, maar als ik er nog net iets langer aan zit zal het wel lukken. Verder zit ik goed op schema.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+mn website gebruikt geen javascript hoe moet ik dan js toepassen
 
 
   ### Verslag van meeting
@@ -163,7 +158,7 @@ Achtergronden in CSS, afbeeldingen in HTML.
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+https://codepen.io/laura-louise/pen/poqxzQP
 
   ### Agenda voor meeting
   samen met je groepje opstellen
