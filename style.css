@@ -1,0 +1,633 @@
+:root {
+  --header-height: 3em;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* RESET STOP */
+/* RESET STOP */
+/* RESET STOP */
+/* RESET STOP */
+/* RESET STOP */
+/* RESET STOP */
+/* RESET STOP */
+/* RESET STOP */
+/* RESET STOP */
+
+
+/* BASICS */
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 100%;
+    width: 100vw;
+    max-width: 100vw;
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body > main {
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-width: 100vw;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+img {
+    max-height: 100%; 
+    max-width: 100%;
+    /* 
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%; */
+
+    object-fit: contain;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.6em;
+}
+
+h1 {
+    font-size: 2.5em;
+
+}
+
+h2 {
+  font-size: 2em;
+  text-align: left;
+
+}
+
+h3 {
+    font-size: 1.5em;
+    text-align: left;
+  
+    display: flex;
+    justify-content: left;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+button{
+    text-decoration: none;
+    margin: 0.2em;
+    color: black;
+}
+
+li>button{
+  padding: 1em;
+  background-color: #f4b52c;
+  color: white;
+  border-radius: 5px;
+  font-size: 1em;
+  border: none;
+}
+
+a {
+    text-decoration: none;
+    margin: 0.2em;
+    color: black;
+}
+
+/* HOVER ANIMATIONS */
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+a:hover {
+    color: #f4b52c;
+}
+
+
+/* BALK BOVEN NAV 
+
+/* body > header {
+    align-items: center;
+    width: 100%;
+    min-width: 100%;
+    height: 4em;
+}
+*/
+
+/* topbar */
+header:nth-of-type(n) > nav p  {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the bottom of the page */
+  
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+color: #fff;
+min-width: 100%;
+  
+    width: 100%; /* Full width */
+    height: var(--header-height); /* Full width */
+    background-color: black;
+    color: white;
+    font-weight: 600;
+  }
+
+/* NAVIGATION */
+
+
+/* hamburger menu */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+}
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+
+
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
+
+
+
+
+
+header:nth-of-type(n) > nav {
+    position: fixed;
+    width: 100%;
+    height: 5em; 
+    background-color: white;
+    color: black;
+    width: 50%;
+  }
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-width: 100%;
+}
+
+nav > img {
+  /* min-height: 100%; */
+  min-width: 80%;
+  object-fit: contain;
+
+  align-items: center;
+  max-height: 70%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* HERO HEADER */
+
+main > header {
+    padding: 0;
+    margin: 4em; /* Ruimte aan de bovenkant vanwege navigatie.*/
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35em;
+
+    background-image: url("https://images.ctfassets.net/bian31qh2p30/2JMLdHjZdjD5gfJgN86YLm/288ad741150b3b466989d6aeef75d73c/SC-Boxing-girl-extended-warm.png?w=768&fm=webp&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main > header > section {
+  display: flex; 
+  flex-direction: column;
+  padding: 0 1em;
+  margin: 0 auto; /* Center the element horizontally */
+  width: 60%; /* txtwidth to % of the page */
+  text-align: center; /* Center the text horizontally within the element */ 
+  justify-content: center;
+  gap: 1em; /* Ruimte tussen titel, tekst en button */
+  border-radius: 0.4em;
+}
+
+
+main > header > section > h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    /* margin-bottom: 1.7em; */
+    color: white;
+}
+
+main > header > section p {
+    font-size: 1em;
+    padding-bottom: 1em;
+    color: white;
+}
+
+/* buttonopmaak */
+main button {
+    padding: 0.5em 1em;
+    background-color: #f4b52c;
+    color: white;
+    border-radius: 5px;
+
+    font-size: 1.2em;
+    border: none;
+}
+
+/* ABONNEMENTOPTIES */
+
+main section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+}
+
+main section h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 1.7em;
+  width: 100%;
+}
+
+
+
+main > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    background-color: white;
+    padding: 1.5em;
+    fit: 2em;
+    border-radius: 25px;
+    max-width: 40%;
+    min-width: 40%;
+    box-shadow: 0px 0px 32px -1px rgba(232,232,232,1);
+}
+
+/* vinkjes naast abonnementopties */
+
+section:nth-of-type(1) ol {
+  list-style-type: '✔️';
+  padding-inline-start: 1ch;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+section:nth-of-type(2) ol {
+  list-style-type: '✔️';
+  padding-inline-start: 1ch;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+
+/* ---- STEDEN ---- */
+
+section:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  max-width: 70%;
+  margin: 20%; /*20% ruimte van de zijkant */
+  
+  background-color: none;
+    fit: none;
+    border-radius: none;
+    max-width: none;
+    min-width: none;
+    box-shadow: none;
+}
+
+/* ul element, zonder dit staat alles naast elkaar */
+section:nth-of-type(4) ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em; /* Adjust the gap between items as needed */
+}
+
+/* vraag stellen over flex-basis calc */
+
+/* Zonder dit staat alles horizontaal, in plaats van verticaal. als ik a erbij zet gaat alles verticaal */
+section > ul > li {
+  flex-basis: calc(33.33% - 1em);
+  text-align: left;
+}
+
+/* "Naar de kaart" button en hover */
+section:nth-of-type(3) button {
+  font-weight: bold;
+  font-size: 1em;
+  padding: 16px 30px;
+  background-color: black;
+  color: white;
+}
+
+section:nth-of-type(3) button:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  transition: 0.2s;
+}
+  
+/* FOOTER */
+
+footer {
+    justify-content: center;
+    width: 100%;
+    height: 13em; 
+    background-color: black;
+    color: #f0ebeb;
+
+    padding-bottom: 5em;
+}
+
+footer li {
+  display: grid;
+  grid-template-columns: repeat(3, 20em);
+  column-gap: 10px;
+  row-gap: 1em;
+  justify-content: center;
+
+  padding-top: 2em;
+
+  width: 60%;
+  font-size: 80%;
+  font-weight: 600;
+} 
+
+footer a {
+  color: #f0ebeb;
+}
+  
+  
+footer p {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+  width: 80%;
+  color: grey;
+}
+  
+  
+footer a: nth-of-type(5) {
+color: grey;
+font-size: 80%;
+font-weight: 600;
+
+margin: auto;
+margin-left: 20%;
+width: 60%;
+}
+  
+  
+  
+/* QUIERY */
+
+@media  (min-width: 600px) {
+  p { 
+  font-size: 1em
+  }
+}
+
+@media  (min-width: 6800px) {
+  p { 
+  font-size: 1.5em;
+  line-height: 1.5em;
+  }
+}
